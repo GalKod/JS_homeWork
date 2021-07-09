@@ -11,6 +11,7 @@ rezult = "a and b are equal";
  } else { 
 rezult = "b is greater"; 
 } */
+
 var a, b;
 a=prompt("Enter a: ");
 b=prompt("Enter b: ");
