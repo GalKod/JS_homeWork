@@ -18,3 +18,21 @@ function printArray(number){
 }
 
 printArray(50);
+
+var lorem="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five cen";
+
+function sortString(stroka){
+    var arrStr=stroka.split(" ");
+    console.log(JSON.stringify(arrStr));
+
+    arrStr.sort(function(a,b){
+        if(a.length>b.length) return 1;
+        if(a.length<b.length) return -1;
+        return 0;
+    });
+
+    stroka=arrStr.join(" ");
+    console.log(stroka);
+}
+
+sortString(lorem);
